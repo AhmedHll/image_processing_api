@@ -1,8 +1,8 @@
 # Image Processing API
 
-PLEASE READ THE INSTRUCTIONS !!
-IF YOU DON'T HAVE TIME TO READ IT
-YOU CAN CHANGE THE PORT IN THE LIKES BELOW TO BE 3000 AND IT WILL BE WORK!
+* PLEASE READ THE INSTRUCTIONS !!
+* IF YOU DON'T HAVE TIME TO READ IT
+* YOU CAN CHANGE THE PORT IN THE LIKES BELOW TO BE 3000 AND IT WILL BE WORK!
 
  - main endpoint: http://localhost:3500/
  - example for image endpoint: http://localhost:3500/image/?name=fjord&width=500&height=400
@@ -15,7 +15,7 @@ YOU CAN CHANGE THE PORT IN THE LIKES BELOW TO BE 3000 AND IT WILL BE WORK!
 ![](screenshots/server.png)
 
 - 3 testes run successfully
-![](screenshots/test.png)
+![](screenshots/test1.png)
 
 
 
