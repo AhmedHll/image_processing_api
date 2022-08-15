@@ -42,10 +42,10 @@ require("dotenv/config");
 dotenv.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 3000;
-// app.get('/', (_req: Request, res: Response) => {
-//   res.json({ msg: `Hello from the server` });
-// });
-app.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+app.get('/', (_req, res) => {
+    res.json({ msg: `Hello from the server` });
+});
+app.get("/image", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { name, width, height } = req.query;
     if (!name || !width || !height || +width <= 0 || +height <= 0)
         return res.status(400).json({ msg: "wrong input" });

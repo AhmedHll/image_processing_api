@@ -8,11 +8,11 @@ dotenv.config();
 const app: Application = express();
 const port = process.env.PORT || 3000;
 
-// app.get('/', (_req: Request, res: Response) => {
-//   res.json({ msg: `Hello from the server` });
-// });
+app.get('/', (_req: Request, res: Response) => {
+  res.json({ msg: `Hello from the server` });
+});
 
-app.get("/", async (req: Request, res: Response): Promise<any> => {
+app.get("/image", async (req: Request, res: Response): Promise<any> => {
   const { name, width, height } = req.query as {
     name: string;
     width: string;

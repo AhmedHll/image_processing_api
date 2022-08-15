@@ -1,5 +1,21 @@
 # Image Processing API
 
+ main endpoint: http://localhost:3500/
+ example for image endpoint: http://localhost:3500/image/?name=fjord&width=500&height=400
+
+* Endpoint tests
+![](screenshots/endpointTest.png)
+
+* server running at port 3500
+![](screenshots/server.png)
+
+* 3 testes run successfully
+![](screenshots/test.png)
+
+
+
+
+
 ## Description
 
 The first project on Advanced web development at [egFWD](https://egfwd.com/) 
@@ -41,3 +57,4 @@ After downloading the project here's a couple of things you should do in order t
 - The thumbnail will be created in the first time only, after that it will be served from the thumbnails folder directly.
 
 - you will get `400` if there is a problem with any of the request queries and will get `404` if you asked for non existing image or there is no `images` folder.
+

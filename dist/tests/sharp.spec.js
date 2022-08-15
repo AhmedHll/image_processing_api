@@ -14,15 +14,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const path_1 = __importDefault(require("path"));
 const sharpResize_1 = __importDefault(require("../sharpResize"));
-it("should return Error If no file name!", () => __awaiter(void 0, void 0, void 0, function* () {
-    const respond = yield (0, sharpResize_1.default)("fjordfjord", "500", "300");
-    expect(respond.error.message).toContain("Input file is missing");
-}));
-it("should return new image path if it success!", () => __awaiter(void 0, void 0, void 0, function* () {
-    const name = "fjord";
-    const width = "500";
-    const height = "400";
-    const respond = yield (0, sharpResize_1.default)(name, width, height);
-    const outputFile = path_1.default.join(process.cwd(), `/images/thumbnails`);
-    expect(respond.data).toEqual(`${outputFile}/${name}-${width}-${height}.jpg`);
-}));
+describe('Test image resize', () => {
+    it("should return Error If no file name!", () => __awaiter(void 0, void 0, void 0, function* () {
+        const respond = yield (0, sharpResize_1.default)("fjordfjord", "500", "300");
+        expect(respond.error.message).toContain("Input file is missing");
+    }));
+    it("should return new image path if it success!", () => __awaiter(void 0, void 0, void 0, function* () {
+        const name = "fjord";
+        const width = "500";
+        const height = "400";
+        const respond = yield (0, sharpResize_1.default)(name, width, height);
+        const outputFile = path_1.default.join(process.cwd(), `/images/thumbnails`);
+        expect(respond.data).toEqual(`${outputFile}/${name}-${width}-${height}.jpg`);
+    }));
+});
