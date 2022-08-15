@@ -1,15 +1,15 @@
 # Image Processing API
 
- main endpoint: http://localhost:3500/
- example for image endpoint: http://localhost:3500/image/?name=fjord&width=500&height=400
+ - main endpoint: http://localhost:3500/
+ - example for image endpoint: http://localhost:3500/image/?name=fjord&width=500&height=400
 
-* Endpoint tests
+- Endpoint tests
 ![](screenshots/endpointTest.png)
 
-* server running at port 3500
+- server running at port 3500
 ![](screenshots/server.png)
 
-* 3 testes run successfully
+- 3 testes run successfully
 ![](screenshots/test.png)
 
 
