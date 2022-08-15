@@ -20,4 +20,12 @@ describe('Endpoints test', () => {
         const response = yield request.get('/');
         expect(response.status).toBe(200);
     }));
+    it(" Test Image endpoint", () => __awaiter(void 0, void 0, void 0, function* () {
+        const name = "fjord";
+        const width = "500";
+        const height = "400";
+        const respond = yield request.get(`/image/?name=${name}&width=${width}&height=${height}`);
+        ;
+        expect(respond.status).toBe(200);
+    }));
 });
